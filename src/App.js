@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import  React  from 'react';
+import Like from './Components/Like';
+import Comments from './Components/Comments';
 
-function App() {
+const App=()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='wrap'>
+        <div className='card'>
+          <div className='card-image'>
+            <img src='https://img.championat.com/c/1350x759/news/big/w/p/podruga-ronaldu-vylozhila-novoe-foto-ego-ocenil-kokorin_1595487833155279868.jpg' alt=''/>
+            <Like/>
+          </div>
+            <Comments/>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App;  
